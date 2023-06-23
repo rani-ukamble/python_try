@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+ <!-- var a=67, b=80;       
+if(a>b)
+document.writeln(a);
+else
+document.writeln(b);
+
+var a1=23, a2=-5, a3=9;
+var prod=a1*a2*a3;
+if(prod<0)
+alert("negative");
+else if(prod>0)
+alert("positive");
+
+var b=[0,-1,4];
+b.sort();
+alert(b);
+
+var c=[5, -2, -6, 0, -1];
+c.sort();
+alert(c[4]);
+
+for(var i=0;i<15;i++){
+    if(i%2==0){
+    document.writeln(i+" is even\n");
+    document.writeln("<br>");}
+    else{
+    document.writeln(i+" is odd\n");
+    document.writeln("<br>")}
+}  
+ -->
+
+
+        function swapChar()
+        {
+        const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+ let result = [];
+        str=document.getElementById("uname").value;
+        console.log(str[0]);
+        for(let i=0;i<str.length;i++){
+            if(UPPER.includes(str[i])){
+                console.log(str[i]);
+                result.push(str[i].toLowerCase());
+            }
+            else if(LOWER.includes(str[i])){
+                    result.push(str[i].toUpperCase());
+            }
+            else
+            result.push(str[i]);
+        }
+        console.log(result.join(''));
+
+    }   
+
+    var arr=function(ip){
+        if(toString.call(ip)==="[object Array]")
+        return true;
+        return false;
+    };
+    document.writeln(arr('w3resource'));
+    document.writeln(arr([1, 2, 4, 0]));
+
+
+
+   
+    </script>
+
+</head>
+<body>
+  
+    <form>
+        <div>
+          <label for="uname">Enter a string: </label>
+          <input type="text" id="uname" name="name" />
+        </div>
+        <div>
+          <input type="button" onclick="swapChar()" />Submit
+        </div>
+      </form>
+</body>
+</html>

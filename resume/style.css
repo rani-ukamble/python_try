@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.total{
+    border: 1px solid black;
+    width: 50%;
+	max-width: 1000px;
+	min-height: 100px;
+	background-color: rgb(245, 239, 231);
+	margin: 0px;
+	display: grid;
+	grid-template-columns: 2fr 4fr;
+}
+/* .name{
+    width: 100%;
+} */
+.left{
+    /* width: 50%; */
+    /* float: left; */
+    background-color: rgb(243, 197, 197);
+    position: initial;
+    padding: 20px;
+}
+
+.right{
+    /* width: 50%; */
+    /* float: right; */
+    position: initial;
+    background-color: rgb(251, 249, 249);
+    padding: 20px;
+}
+/* .img{
+width: 50%;
+height: auto;
+align-items: center;
+} */
+#t{
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.contact .skills .lang .hobbies .edu .projects{
+    margin-bottom: 30px;
+    
+}
+

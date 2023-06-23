@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=[3,2,5,1];
+        var b=[1,2,3,4];
+        var c=[];
+        for(let x=0;x<a.length;x++){
+            c[i]=a[i]+b[i];
+            
+        }
+        document.writeln(c);
+    </script>
+    <script>
+        function validateForm(){
+            let i=document.forms["myForm"]["fname"].value;
+            if(i==""){
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>JsS validation</h2>
+    <!-- <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+       Name: <input type="text" name="fname" >
+       <input type="submit" value="submit">
+    </form>  
+
+    <form action="index.html" method="post">
+        <input type="text" name="fname" required>
+        <input type="submit" value="submit">
+       
+    </form> -->
+
+    <!-- <p>Check no. is in betn 1-10</p>
+
+    <input id="num">
+    <button type="button" onclick="valNum()">submit</button>
+    
+    <p id="para"></p>
+
+    <script>
+        function valNum(){
+            let x=document.getElementById("num").value;
+            let text;
+            if(isNaN(x) || x<1 || x>10){
+                text="Not valid";
+            }
+            else
+            text="valid";
+
+            document.getElementById("para").innerHTML=text;
+        }
+    </script> -->
+
+    <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname" >
+        <input type="submit" value="submit">
+     </form>  
+</body>
+</html>
